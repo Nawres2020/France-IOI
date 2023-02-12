@@ -1,0 +1,13 @@
+#include <iostream>
+#include "robot.h"
+using namespace std;
+int main()
+{
+   remplir(5);
+   transferer(5, 3); // on obtient 2 Litres dans le grand tonneau
+   vider(3) ; // on vide le petit tonneau
+   // Maintenant, nous avons un grand tonneau contenant 2 litres et un petit tonneau vide, donc nous versons les 2 litres dans le petit tonneau.
+   transferer(5,3);
+   remplir(5); // le grand tonneau = 5l , maintenant on le vide dans le petit qui deja contenant 2 , donc 
+   transferer(5,3); // or le petit tonneau contenant deja 2 L , avec une capacité de 3 L , donc on a 5 L - 1 L = 4 L 
+}
